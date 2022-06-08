@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\*\shell\Dropbox Ignore File]
+[-HKEY_CLASSES_ROOT\*\shell\Dropbox UnIgnore File]
+[-HKEY_CLASSES_ROOT\Directory\shell\Dropbox Ignore Folder]
+[-HKEY_CLASSES_ROOT\Directory\shell\Dropbox UnIgnore Folder]

@@ -1,0 +1,37 @@
+Windows Registry Editor Version 5.00
+
+;= Context menu to ignore folders:
+[HKEY_CLASSES_ROOT\Directory\shell\Dropbox Ignore Folder]
+"AppliesTo"="System.ItemPathDisplay:\"Dropbox\""
+"Icon"="C:\\Program Files (x86)\\Dropbox\\Client\\Dropbox.exe,12"
+@="Ignore from Dropbox"
+
+[HKEY_CLASSES_ROOT\Directory\shell\Dropbox Ignore Folder\command]
+@="powershell.exe -WindowStyle hidden -Command \"Set-Content -Path \\\"%1\\\" -Stream com.dropbox.ignored -Value 1\""
+
+;= Context menu to un-ignore folders:
+[HKEY_CLASSES_ROOT\Directory\shell\Dropbox UnIgnore Folder]
+"AppliesTo"="System.ItemPathDisplay:\"Dropbox\""
+"Icon"="C:\\Program Files (x86)\\Dropbox\\Client\\Dropbox.exe,12"
+@="Un-Ignore from Dropbox"
+
+[HKEY_CLASSES_ROOT\Directory\shell\Dropbox UnIgnore Folder\command]
+@="powershell.exe -WindowStyle hidden -Command \"Clear-Content -Path \\\"%1\\\" -Stream com.dropbox.ignored\""
+
+;= Context menu to ignore files:
+[HKEY_CLASSES_ROOT\*\shell\Dropbox Ignore File]
+"AppliesTo"="System.ItemPathDisplay:\"Dropbox\""
+"Icon"="C:\\Program Files (x86)\\Dropbox\\Client\\Dropbox.exe,12"
+@="Ignore from Dropbox"
+
+[HKEY_CLASSES_ROOT\*\shell\Dropbox Ignore File\command]
+@="powershell.exe -WindowStyle hidden -Command \"Set-Content -Path \\\"%1\\\" -Stream com.dropbox.ignored -Value 1\""
+
+;= Context menu to un-ignore files:
+[HKEY_CLASSES_ROOT\*\shell\Dropbox UnIgnore File]
+"AppliesTo"="System.ItemPathDisplay:\"Dropbox\""
+"Icon"="C:\\Program Files (x86)\\Dropbox\\Client\\Dropbox.exe,12"
+@="Un-Ignore from Dropbox"
+
+[HKEY_CLASSES_ROOT\*\shell\Dropbox UnIgnore File\command]
+@="powershell.exe -WindowStyle hidden -Command \"Clear-Content -Path \\\"%1\\\" -Stream com.dropbox.ignored\""
