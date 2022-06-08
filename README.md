@@ -17,7 +17,9 @@ Download and run [`UninstallContextMenuEntries.reg`](Regedit/UninstallContextMen
 ### Usage
 To have Dropbox ignore a file or folder, right-click it and choose `Ignore from Dropbox`. To stop ignoring a file or folder, right-click it and choose `Un-Ignore from Dropbox`. These context menu entries will only be present within your Dropbox folder.
 
-If you ignore a folder, Dropbox will also ignore all files and subfolders within that folder.
+Ignoring a file or folder differs from using Dropbox's built-in Selective Sync in that ignored files/folders will remain on your device but will not be tracked, whereas folders excluded using Selective Sync will be removed from your device (as this is typically a way to avoid downloading the folder to your device as a way to avoid bandwidth and/or disk capacity usage).
+
+If you ignore a folder, Dropbox will also ignore all files and subfolders within that folder. If a folder is ignored before files are added to that folder, those files will not be present in your Dropbox account and will not count against your Dropbox capacity limit.
 
 ### Known Limitations
 - Requires Dropbox to be installed at `C:\Program Files (x86)\Dropbox` for the icons to properly show in the Context Menu. If Dropbox is installed somewhere else, the context menu entries will still work, they will just have placeholder images instead of the Dropbox icon.
