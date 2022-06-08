@@ -4,10 +4,10 @@ These registry entries add Context Menu (i.e. right click) options to Dropbox fi
 ![image](https://user-images.githubusercontent.com/3628457/172520857-97fce272-90c2-46b3-a481-978c050dbc47.png)
 
 ### Installation
-Run `InstallContextMenuEntries.reg` and merge the entries into your registry.
+Download and run [`InstallContextMenuEntries.reg`](Regedit/InstallContextMenuEntries.reg) and merge the entries into your registry. *I strongly encourage you to examine the contents of the file with a text editor BEFORE merging the entries, as you should do with any script you find on the internet!*
 
 ### Uninstallation
-Run `UninstallContextMenuEntries.reg` and merge the entries into your registry.
+Download and run [`UninstallContextMenuEntries.reg`](Regedit/UninstallContextMenuEntries.reg) and merge the entries into your registry.
 
 ### Usage
 To have Dropbox ignore a file or folder, right-click it and choose `Ignore from Dropbox`. To stop ignoring a file or folder, right-click it and choose `Un-Ignore from Dropbox`. These context menu entries will only be present within your Dropbox folder.
